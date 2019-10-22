@@ -28,7 +28,11 @@ class Owner
   end
 
   def cats
-    Cat.all.collect{|cat| cat.owner == self}
+    Cat.all.each do |cat|
+      if cat.owner == self
+        @cats << cat
+      end
+    end
   end
 
   def dogs
