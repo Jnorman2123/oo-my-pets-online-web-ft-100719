@@ -28,7 +28,7 @@ class Owner
 
   def cats
     Cat.all.select{|cat| cat.owner == self}.uniq
-    binding.pry
+    # binding.pry
   end
 
   def dogs
