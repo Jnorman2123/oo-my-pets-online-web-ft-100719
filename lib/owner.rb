@@ -5,6 +5,6 @@ attr_accessor :species
 
   def initialize(name)
     @name = name
-    @species
+    @species = human
   end
 end
