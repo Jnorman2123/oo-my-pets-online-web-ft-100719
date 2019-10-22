@@ -13,6 +13,6 @@ class Owner
   end
 
   def self.all
-
+    @@all_owners
   end
 end
