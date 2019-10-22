@@ -3,7 +3,6 @@ class Owner
   # code goes here
   attr_reader :name, :species
   @@all_owners = []
-  @cats = []
 
   def initialize(name)
     @name = name
@@ -37,6 +36,6 @@ class Owner
 
   def buy_cat(cat)
     cat = Cat.new(name, self)
-    self.cats
+    self.cats.
   end
 end
