@@ -28,8 +28,7 @@ class Owner
   end
 
   def cats
-    Cat.all.select {|cat| cat.owner == self   binding.pry}
-
+    Cat.all.select {|cat| cat.owner == self}
   end
 
   def dogs
@@ -37,6 +36,6 @@ class Owner
   end
 
   def buy_cat(cat)
-    @cats << cat
+    self.cats
   end
 end
