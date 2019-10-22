@@ -26,6 +26,6 @@ class Owner
   end
 
   def cats
-
+    Cat.all.collect{|owner| owner == self}
   end
 end
